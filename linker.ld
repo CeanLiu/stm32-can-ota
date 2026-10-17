@@ -25,7 +25,7 @@ SECTION {
     .data:
     {
         . = ALIGN(4);
-        _sidata = .;
+        _sdata = .;
         *(.data*)
         . = ALIGN(4);
         _edata = .;
@@ -39,5 +39,5 @@ SECTION {
         *(COMMON)
         .=ALIGN(4)
         _ebss = .;
-    } > RAM 
+    } > RAM
 }
